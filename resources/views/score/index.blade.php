@@ -59,18 +59,22 @@
                                 <tr>
                                     <th>编号</th>
                                     <th>姓名</th>
-                                    <th>课程</th>
-                                    <th>分数</th>
+                                    <th>语文</th>
+                                    <th>数学</th>
+                                    <th>英语</th>
+                                    <th>总分</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach($scores as $score)
                                 <tr class="gradeU">
-                                    <td>{{$score->s_id}}</td>
-                                    <td>{{$score->s_name}}</td>
-                                    <td>{{$score->c_name}}</td>
-                                    <td>{{$score->s_score}}</td>
+                                    <td>{{$score->id}}</td>
+                                    <td>{{$score->name}}</td>
+                                    <td>{{$score->Chinese}}</td>
+                                    <td>{{$score->Math}}</td>
+                                    <td>{{$score->English}}</td>
+                                    <td>{{$score->total}}</td>
                                     <td>
                                         <a href="javascript:;">编辑</a> 
                                         <a href="javascript:;" onclick="">删除</a>
