@@ -29,6 +29,8 @@ Route::group(['prefix' => 'student'], function(){
 
 Route::group(['prefix' => 'score'], function(){
     Route::get('/', ['as' => 'score.index', 'uses' => 'ScoreController@index']);
+    Route::get('/graph', ['as' => 'score.graph', 'uses' => 'ScoreController@showGraph']);
+    Route::get('/getDataOfGraph', ['as' => 'score.getDataOfGraph', 'uses' => 'ScoreController@getDataOfGraph']);
     // Route::get('/add', ['as' => 'score.add', 'uses' => 'ScoreController@add']);
     // Route::get('/{id}', ['as' => 'score.show', 'uses' => 'ScoreController@show']);
     // Route::post('/save', ['as' => 'score.save', 'uses' => 'ScoreController@save']);

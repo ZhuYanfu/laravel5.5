@@ -66,25 +66,7 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="graph_echarts.html">百度ECharts</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_flot.html">Flot</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_morris.html">Morris.js</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_rickshaw.html">Rickshaw</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_peity.html">Peity</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_sparkline.html">Sparkline</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_metrics.html">图表组合</a>
+                                <a class="J_menuItem" href="{{ route('score.graph') }}">百度ECharts</a>
                             </li>
                         </ul>
                     </li>

@@ -7,17 +7,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>H+ 后台主题UI框架 - 百度ECHarts</title>
     <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
     <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
 
-    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
-    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico"> <link href="/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
 
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/style.min862f.css?v=4.1.0" rel="stylesheet">
 
 </head>
 
@@ -54,14 +54,14 @@
                                 <i class="fa fa-times"></i>
                             </a>
                         </div>
-                    </div>
+                    </div> 
                     <div class="ibox-content">
                         <div class="echarts" id="echarts-line-chart"></div>
                     </div>
                 </div>
             </div>-->
             <div class="col-sm-12">
-                <div class="ibox float-e-margins">
+                <div class="ibox float-e-margins" style="width: 100%; height: 80%">
                     <div class="ibox-title">
                         <h5>柱状图</h5>
                         <!-- <div class="ibox-tools">
@@ -337,11 +337,12 @@
             </div>
         </div> -->
     </div>
-    <script src="js/jquery.min.js?v=2.1.4"></script>
-    <script src="js/bootstrap.min.js?v=3.3.6"></script>
-    <script src="js/plugins/echarts/echarts-all.js"></script>
-    <script src="js/content.min.js?v=1.0.0"></script>
-    <script src="js/demo/echarts-demo.min.js"></script>
+    <script src="/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/js/bootstrap.min.js?v=3.3.6"></script>
+    <!-- <script src="/js/plugins/echarts/echarts-all.js"></script> -->
+    <script src="/js/plugins/echarts/echarts.js"></script>
+    <script src="/js/content.min.js?v=1.0.0"></script>
+    <script src="/js/demo/echarts-demo.min.js"></script>
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
 </body>
 
