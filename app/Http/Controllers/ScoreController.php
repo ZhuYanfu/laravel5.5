@@ -14,12 +14,6 @@ class ScoreController extends Controller
 {
     public function index()
     {
-    	// $data = DB::table('score')->get();
-    	/*$data = Score::where('s_id','01')->get();
-    	foreach ($data as $value) {
-    		var_dump($value->s_score);
-    	}*/
-
     	//不使用ORM
     	$scores = DB::table('score as a')
     			-> select('a.s_id as id','e.s_name as name',DB::Raw('IFNULL(b.s_score,0) as Chinese'),DB::Raw('IFNULL(c.s_score,0) as Math'),DB::Raw('IFNULL(d.s_score,0) as English'),DB::Raw('(IFNULL(b.s_score,0)+IFNULL(c.s_score,0)+IFNULL(d.s_score,0)) as total'))
